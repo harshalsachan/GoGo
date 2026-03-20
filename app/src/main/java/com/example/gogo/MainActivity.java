@@ -1,6 +1,8 @@
 package com.example.gogo;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button btnMap = findViewById(R.id.btn_map);
+        Button btnPlaces = findViewById(R.id.btn_places);
+
+        btnMap.setOnClickListener(v ->
+                startActivity(new Intent(this, MapActivity.class)));
+        btnPlaces.setOnClickListener(v ->
+                startActivity(new Intent(this, PlacesListActivity.class)));
     }
 }
