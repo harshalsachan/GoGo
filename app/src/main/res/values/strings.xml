@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">GoGo</string>
+    <string name="app_tagline">Your travel companion</string>
+    <string name="btn_explore_map">Explore Map</string>
+    <string name="btn_browse_places">Browse Places</string>
+    <string name="title_map">Map View</string>
+    <string name="title_places">Tourist Places</string>
+    <string name="btn_open_maps">Open in Maps</string>
+    <string name="content_desc_place_image">Place image</string>
 </resources>
